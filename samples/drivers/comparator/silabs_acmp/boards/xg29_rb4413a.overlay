@@ -1,0 +1,20 @@
+/*
+ * Copyright (c) 2024 Silicon Labs
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <zephyr/dt-bindings/comparator/silabs-acmp.h>
+#include <zephyr/dt-bindings/pinctrl/silabs/xg29-pinctrl.h>
+
+&acmp0 {
+	status = "okay";
+
+	bias = <0>;
+	hysteresis-mode = "neg10mv";
+	accuracy-mode = "high";
+	input-range = "full";
+	input-positive = <ACMP_INPUT_VSENSE01DIV4>;
+	input-negative = <ACMP_INPUT_VREFDIV1V25>;
+	vref-divider = <17>;
+};

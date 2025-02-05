@@ -1,0 +1,11 @@
+sample:
+  description: Silabs ACMP Comparator driver sample
+  name: SiLabs ACMP Comparator sample
+common:
+  platform_allow:
+    - xg29_rb4413a
+  integration_platforms:
+    - xg29_rb4413a
+  tags:
+    - drivers
+    - comparator
